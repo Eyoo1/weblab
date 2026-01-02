@@ -1,0 +1,96 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.hero {
+  background: #1f4fff;
+  color: white;
+  padding: 30px;
+}
+
+.hero img {
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.book-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: white;
+  color: #1f4fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* FEATURES */
+.features {
+  padding: 30px;
+}
+
+.feature-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* TRAINERS */
+.trainers {
+  padding: 30px;
+}
+
+.trainer-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.trainer-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  text-align: center;
+}
+
+/* BOOKING */
+.booking {
+  padding: 30px;
+}
+
+.booking form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking input,
+.booking select {
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: white;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .hero {
+    display: flex;
+    gap: 30px;
+  }
+
+  .trainer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+

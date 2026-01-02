@@ -1,0 +1,102 @@
+/* Main section */
+.trainers {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Section title */
+.trainers h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Grid for trainer cards */
+.trainer-grid {
+  display: grid;
+  gap: 24px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Individual card */
+.trainer-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hover effect */
+.trainer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Trainer image */
+.trainer-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Trainer name */
+.trainer-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* Specialty & price */
+.trainer-card p {
+  margin: 4px 0;
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Book Now button */
+.trainer-card button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.trainer-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .trainer-card img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .trainers {
+    padding: 40px 10px;
+  }
+
+  .trainer-card {
+    padding: 16px;
+  }
+
+  .trainer-card img {
+    height: 180px;
+  }
+}
